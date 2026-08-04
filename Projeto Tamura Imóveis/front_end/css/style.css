@@ -1,0 +1,451 @@
+/* ========================================================= */
+/* ============== CONFIGURAÇÃO GLOBAL ====================== */
+/* ========================================================= */
+
+:root{
+
+    /* ======================================== */
+    /* Cores */
+    /* ======================================== */
+
+    --cor-primaria:#151859;
+    --cor-secundaria:#45578C;
+    --cor-terciaria:#9EC9F6;
+    --cor-destaque:#E30613;
+    --cor-branco:#FFFFFF;
+    --cor-fundo-header:#9EC9F6;
+    --cor-hover-menu:#A0CCF2;
+    --cor-codigo:#8A92B2;
+
+    /* ======================================== */
+    /* Status dos Imóveis */
+    /* ======================================== */
+
+    --status-disponivel-bg:#B1F2B6;
+    --status-disponivel:#0A641E;
+    --status-vendido-bg:#FFD6D6;
+    --status-vendido:#C62828;
+    --status-reservado-bg:#FFF0B3;
+    --status-reservado:#A06A00;
+    --status-alugado-bg:#D9ECFF;
+    --status-alugado:#1565C0;
+
+    /* ======================================== */
+    /* Fontes */
+    /* ======================================== */
+
+    --fonte-principal:Arial, Helvetica, sans-serif;
+    --fonte-logo:"Playfair Display", serif;
+}
+
+/* ======================================== */
+/* -------- Reset Global ------------------ */
+/* ======================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+}
+
+/* ======================================== */
+/* -------- Configuração Body ------------- */
+/* ======================================== */
+body{
+    font-family:var(--fonte-principal);
+    background-color:var(--cor-branco);
+    color:var(--cor-primaria);
+}
+
+/* ========================================================= */
+/* ======================= HEADER =========================== */
+/* ========================================================= */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+    background:var(--cor-fundo-header);
+    border-bottom:2px solid var(--cor-destaque);
+    position:relative;
+}
+
+/* ======================================== */
+/* -------- Logo -------------------------- */
+/* ======================================== */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:65px;
+}
+
+.logo h1{
+    font-family:var(--fonte-logo);
+    font-size:26px;
+    font-weight:700;
+    line-height:1.1;
+    letter-spacing:1px;
+    color:var(--cor-destaque);
+}
+
+/* ======================================== */
+/* -------- Botão Menu -------------------- */
+/* ======================================== */
+#menu-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+nav img{
+    width:40px;
+}
+
+/* ======================================== */
+/* -------- Navegação Mobile -------------- */
+/* ======================================== */
+
+.navegacao{
+    display:none;
+}
+
+.navegacao.ativo{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    position:absolute;
+    top:100%;
+    right:15px;
+    width:220px;
+    padding:20px;
+    background:white;
+    border-top:4px solid var(--cor-destaque);
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    z-index:100;
+}
+
+.navegacao a{
+    display:block;
+    padding:10px;
+    border-radius:10px;
+    color:var(--cor-primaria);
+    font-size:16px;
+    font-weight:600;
+    transition:.30s;
+}
+
+.navegacao a:hover{
+    background:var(--cor-hover-menu);
+    color:var(--cor-destaque);
+}
+
+/* ========================================================= */
+/* ======================= RODAPÉ =========================== */
+/* ========================================================= */
+.rodape{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    padding:18px 20px;
+    background:var(--cor-primaria);
+    color:var(--cor-branco);
+}
+
+/* ======================================== */
+/* -------- Empresa ----------------------- */
+/* ======================================== */
+.empresa{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.empresa h3{
+    margin-bottom:5px;
+    font-size:22px;
+    color:var(--cor-destaque);
+}
+
+.empresa p{
+    text-align:left;
+}
+
+/* ======================================== */
+/* -------- Desenvolvedor ----------------- */
+/* ======================================== */
+.desenvolvedor{
+    margin-top:50px;
+}
+
+.desenvolvedor p{
+    margin:6px 0;
+    color:var(--cor-branco);
+    text-align:left;
+    line-height:1.5;
+}
+
+.desenvolvedor p:last-child{
+    margin-bottom:0;
+}
+
+.desenvolvedor a{
+    color:var(--cor-branco);
+    transition:.30s;
+}
+
+.desenvolvedor a:hover{
+    color:var(--cor-destaque);
+    text-decoration:underline;
+}
+
+/* ======================================== */
+/* -------- Localização e contatos -------- */
+/* ======================================== */
+.localizacao, .contatos{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.localizacao h4, .contatos h4{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:4px;
+    color:var(--cor-destaque);
+}
+
+/* ======================================== */
+/* -------- Copyright --------------------- */
+/* ======================================== */
+.copyright{
+    width:100%;
+    margin-top:8px;
+    padding-top:10px;
+    border-top:1px solid var(--cor-destaque);
+    font-size:13px;
+}
+
+/* ========================================================= */
+/* ======================= TABLET =========================== */
+/* ========================================================= */
+@media (min-width:768px){
+
+    /* ======================================== */
+    /* -------- Header ------------------------ */
+    /* ======================================== */
+    header{
+        padding:16px 24px;
+    }
+
+    .logo img{
+        width:78px;
+    }
+
+    .logo h1{
+        font-size:32px;
+    }
+
+    #menu-btn img{
+        width:46px;
+    }
+
+    .navegacao.ativo{
+        width:250px;
+        padding:18px;
+    }
+
+    .navegacao a{
+        padding:14px 12px;
+        font-size:20px;
+    }
+
+    /* ======================================== */
+    /* -------- Rodapé ------------------------ */
+    /* ======================================== */
+    .rodape{
+        padding:22px 28px;
+    }
+
+    .empresa h3{
+        font-size:30px;
+    }
+
+    .empresa p{
+        font-size:18px;
+    }
+
+    .localizacao h4, .contatos h4{
+        font-size:20px;
+    }
+
+    .localizacao p, .contatos p, .contatos a{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .copyright{
+        font-size:15px;
+    }
+}
+
+/* ========================================================= */
+/* ====================== NOTEBOOK ========================== */
+/* ========================================================= */
+@media (min-width:1024px){
+
+    /* ======================================== */
+    /* -------- Header ------------------------ */
+    /* ======================================== */
+    header{
+        padding:18px 40px;
+    }
+
+    .logo img{
+        width:85px;
+    }
+
+    .logo h1{
+        font-size:34px;
+    }
+
+    #menu-btn{
+        display:none;
+    }
+
+    .navegacao{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        position:static;
+        width:auto;
+        gap:40px;
+        padding:0;
+        background:none;
+        border:none;
+        border-radius:0;
+        box-shadow:none;
+    }
+
+    .navegacao a{
+        font-size:18px;
+        font-weight:600;
+    }
+
+    /* ======================================== */
+    /* -------- Rodapé ------------------------ */
+    /* ======================================== */
+    .rodape{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        column-gap:35px;
+        row-gap:8px;
+        padding:24px 55px 6px;
+    }
+
+    .empresa{
+        justify-self:start;
+        text-align:left;
+    }
+
+    .localizacao{
+        justify-self:center;
+        text-align:left;
+    }
+
+    .contatos{
+        justify-self:end;
+        text-align:left;
+    }
+
+    .empresa h3{
+        font-size:28px;
+        margin-bottom:5px;
+    }
+
+    .localizacao h4, .contatos h4{
+        font-size:18px;
+        margin-bottom:5px;
+    }
+
+    .rodape p, .rodape a{
+        font-size:15px;
+        line-height:1.35;
+    }
+
+    .desenvolvedor p:last-child{
+        margin-bottom:0;
+    }
+
+    .copyright{
+        grid-column:1 / -1;
+        margin-top:0;
+        padding-top:6px;
+        font-size:13px;
+        text-align:left;
+    }
+}
+
+/* ========================================================= */
+/* ======================= DESKTOP ========================== */
+/* ========================================================= */
+@media (min-width:1440px){
+
+    /* ======================================== */
+    /* -------- Header ------------------------ */
+    /* ======================================== */
+    header{
+        padding:20px 60px;
+    }
+
+    .logo img{
+        width:95px;
+    }
+
+    .logo h1{
+        font-size:38px;
+    }
+
+    .navegacao{
+        gap:50px;
+    }
+
+    .navegacao a{
+        font-size:19px;
+    }
+
+    /* ======================================== */
+    /* -------- Rodapé ------------------------ */
+    /* ======================================== */
+    .rodape{
+        column-gap:45px;
+        row-gap:8px;
+        padding:28px 70px 16px;
+    }
+
+    .empresa h3{
+        font-size:30px;
+    }
+
+    .localizacao h4, .contatos h4{
+        font-size:19px;
+    }
+
+    .rodape p, .rodape a{
+        font-size:16px;
+        line-height:1.4;
+    }
+
+    .copyright{
+        font-size:14px;
+    }
+}

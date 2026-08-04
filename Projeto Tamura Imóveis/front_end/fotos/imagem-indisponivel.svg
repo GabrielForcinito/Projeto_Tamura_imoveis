@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#eef1f7"/>
+  <g fill="none" stroke="#0f1f63" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="260" y="180" width="680" height="440" rx="28"/>
+    <circle cx="455" cy="340" r="58"/>
+    <path d="M300 570l190-185 130 120 105-95 175 160"/>
+  </g>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" fill="#0f1f63">Imagem indisponível</text>
+</svg>

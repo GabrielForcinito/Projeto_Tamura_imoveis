@@ -1,0 +1,623 @@
+/* ========================================================= */
+/* ======================== BUSCA ========================== */
+/* ========================================================= */
+.busca{
+    margin:20px;
+    margin-top:15px;
+    padding:20px;
+    border-radius:20px;
+    background:var(--cor-terciaria);
+}
+
+.busca h3{
+    margin-bottom:15px;
+    text-align:center;
+    color:var(--cor-primaria);
+    font-size:22px;
+}
+
+/* ======================================== */
+/* -------- Formulário -------------------- */
+/* ======================================== */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* ======================================== */
+/* -------- Select ------------------------ */
+/* ======================================== */
+select{
+    width:100%;
+    padding:12px;
+    border:2px solid #FFFFFF;
+    border-radius:12px;
+    background:#FFFFFF;
+    color:var(--cor-secundaria);
+    font-size:15px;
+}
+
+select:focus{
+    outline:none;
+    border-color:var(--cor-secundaria);
+}
+
+/* ======================================== */
+/* -------- Botão Buscar ------------------ */
+/* ======================================== */
+.btn-buscar{
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:var(--cor-destaque);
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    cursor:pointer;
+    transition:.30s;
+}
+
+.btn-buscar:hover{
+    transform:translateY(-2px);
+}
+
+/* ========================================================= */
+/* ======================== TÍTULO ========================= */
+/* ========================================================= */
+.titulo{
+    margin:40px 0 30px;
+    text-align:center;
+}
+
+.titulo h3{
+    color:var(--cor-primaria);
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ========================================================= */
+/* ========================= CARDS ========================= */
+/* ========================================================= */
+.card-imovel{
+    margin:15px;
+    overflow:hidden;
+    border:4px solid var(--cor-secundaria);
+    border-radius:20px;
+    background:#FFFFFF;
+}
+
+.card-imovel img{
+    width:100%;
+    height:220px;
+    display:block;
+    object-fit:cover;
+}
+
+/* ======================================== */
+/* -------- Informações ------------------- */
+/* ======================================== */
+.info-imovel{
+    padding:20px;
+}
+
+.info-imovel h3{
+    margin-bottom:2px;
+    color:var(--cor-primaria);
+    font-size:30px;
+    font-weight:bold;
+}
+
+.codigo{
+    margin-bottom:5px;
+    color:var(--cor-codigo);
+    font-size:13px;
+}
+
+.preco{
+    margin-bottom:18px;
+    color:var(--cor-destaque);
+    font-size:30px;
+    font-weight:bold;
+}
+
+.endereco, .bairro{
+    color:var(--cor-secundaria);
+    font-size:15px;
+    font-weight:700;
+}
+
+.endereco{
+    margin-bottom:8px;
+}
+
+.bairro{
+    margin-bottom:18px;
+}
+
+.descricao{
+    margin-bottom:25px;
+    color:var(--cor-secundaria);
+    font-size:17px;
+    line-height:1.5;
+}
+
+/* ======================================== */
+/* -------- Botão Detalhes ---------------- */
+/* ======================================== */
+.btn-detalhes{
+    display:block;
+    width:100%;
+    padding:15px;
+    text-align:center;
+    border-radius:12px;
+    background:var(--cor-destaque);
+    color:#FFFFFF;
+    font-size:17px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:.30s;
+}
+
+.btn-detalhes:hover{
+    transform:translateY(-2px);
+}
+
+/* ========================================================= */
+/* ======================= PAGINAÇÃO ======================= */
+/* ========================================================= */
+.paginacao{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:30px 0;
+}
+
+.pagina{
+    width:40px;
+    height:40px;
+    border:2px solid var(--cor-secundaria);
+    border-radius:10px;
+    background:#FFFFFF;
+    color:var(--cor-secundaria);
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.pagina.ativa{
+    background:var(--cor-secundaria);
+    color:#FFFFFF;
+}
+
+/* ========================================================= */
+/* ==================== SEM RESULTADOS ===================== */
+/* ========================================================= */
+.sem-resultados{
+    margin:20px;
+    padding:30px 20px;
+    text-align:center;
+    border:3px dashed var(--cor-secundaria);
+    border-radius:20px;
+    background:var(--cor-fundo);
+}
+
+.sem-resultados h3{
+    margin-bottom:10px;
+    color:var(--cor-primaria);
+    font-size:30px;
+}
+
+.sem-resultados p{
+    color:var(--cor-secundaria);
+    font-size:17px;
+}
+
+/* ========================================================= */
+/* ======================== STATUS ========================= */
+/* ========================================================= */
+.status-card{
+    display:inline-block;
+    margin:10px 0;
+    padding:8px 15px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
+.status-disponivel{
+    background:var(--status-disponivel-bg);
+    color:var(--status-disponivel);
+}
+
+.status-vendido{
+    background:var(--status-vendido-bg);
+    color:var(--status-vendido);
+}
+
+.status-reservado{
+    background:var(--status-reservado-bg);
+    color:var(--status-reservado);
+}
+
+.status-alugado{
+    background:var(--status-alugado-bg);
+    color:var(--status-alugado);
+}
+
+/* ========================================================= */
+/* ======================== TABLET ========================= */
+/* ========================================================= */
+@media (min-width:768px){
+
+    /* ======================================== */
+    /* -------- Bloco de Busca ---------------- */
+    /* ======================================== */
+    .busca{
+        width:88%;
+        margin:22px auto 45px;
+        padding:24px;
+        border-radius:20px;
+    }
+
+    .busca h3{
+        font-size:30px;
+        margin-bottom:20px;
+    }
+
+    form{
+        gap:14px;
+    }
+
+    select{
+        height:52px;
+        padding:0 16px;
+        font-size:17px;
+    }
+
+    .btn-buscar{
+        height:52px;
+        font-size:19px;
+    }
+
+    /* ======================================== */
+    /* -------- Título ------------------------ */
+    /* ======================================== */
+    .titulo{
+        margin-bottom:32px;
+    }
+
+    .titulo h2{
+        font-size:32px;
+        font-weight:700;
+    }
+
+    /* ======================================== */
+    /* ----- Mensagem Sem Imóveis ------------- */
+    /* ======================================== */
+    .sem-imoveis{
+        width:78%;
+        margin:0 auto 45px;
+        padding:34px 30px;
+    }
+
+    .sem-imoveis h3{
+        font-size:28px;
+        margin-bottom:14px;
+    }
+
+    .sem-imoveis p{
+        font-size:18px;
+    }
+
+    /* ======================================== */
+    /* -------- Cards de Imóveis -------------- */
+    /* ======================================== */
+
+    #lista-imoveis{
+        width:78%;
+        margin:0 auto 45px;
+    }
+
+    .card-imovel{
+        width:100%;
+        max-width:650px;
+        margin:0 auto 30px;
+    }
+
+    .card-imovel img{
+        height:300px;
+        object-fit:cover;
+    }
+
+    .info-imovel{
+        padding:26px;
+    }
+
+    .info-imovel h3{
+        font-size:40px;
+    }
+
+    .codigo{
+        font-size:17px;
+        margin-bottom:5px;
+    }
+
+    .status-card{
+        font-size:18px;
+        padding:10px 18px;
+        margin-bottom:18px;
+    }
+
+    .preco{
+        font-size:42px;
+        margin-bottom:20px;
+    }
+
+    .endereco, .bairro{
+    font-size:19px;
+    }
+
+    .descricao{
+        font-size:22px;
+        line-height:1.6;
+        margin-bottom:26px;
+    }
+
+    .btn-detalhes{
+        margin-top:24px;
+        padding:18px;
+        font-size:22px;
+    }
+}
+
+/* ========================================================= */
+/* ======================= NOTEBOOK ======================== */
+/* ========================================================= */
+@media (min-width:1024px){
+
+    /* ======================================== */
+    /* -------- Busca ------------------------- */
+    /* ======================================== */
+    .busca{
+        max-width:1400px;
+        margin:30px auto 25px;
+        padding:35px;
+    }
+
+    .busca h3{
+        margin-bottom:35px;
+        font-size:38px;
+    }
+
+    form{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:20px;
+        align-items:end;
+    }
+
+    select{
+        height:48px;
+        font-size:16px;
+    }
+
+    .btn-buscar{
+        height:48px;
+        font-size:18px;
+    }
+
+    /* ======================================== */
+    /* -------- Título ------------------------ */
+    /* ======================================== */
+    .titulo{
+        margin:95px 0 35px;
+    }
+
+    .titulo h3{
+        font-size:38px;
+        font-weight:700;
+        color:var(--cor-primaria);
+    }
+
+    /* ======================================== */
+    /* -------- Lista de Imóveis -------------- */
+    /* ======================================== */
+    #lista-imoveis{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+        max-width:900px;
+        margin:0 auto 60px;
+    }
+
+    .card-imovel{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:430px;
+        min-height:100%;
+        margin:0;
+    }
+
+    .card-imovel img{
+        height:240px;
+        object-fit:cover;
+    }
+
+    .info-imovel{
+        display:flex;
+        flex-direction:column;
+        flex:1;
+    }
+
+    .btn-detalhes{
+        margin-top:auto;
+    }
+
+    .preco{
+        font-size:30px;
+    }
+
+    /* ======================================== */
+    /* -------- Paginação --------------------- */
+    /* ======================================== */
+    .paginacao{
+        margin:50px 0;
+    }
+
+    .pagina{
+        width:48px;
+        height:48px;
+        font-size:16px;
+    }
+
+    /* ======================================== */
+    /* -------- Sem Resultados ---------------- */
+    /* ======================================== */
+    .sem-resultados{
+        grid-column:1 / -1;
+        width:100%;
+        max-width:600px;
+        margin:60px auto 80px;
+        padding:40px;
+    }
+
+    .sem-resultados h3{
+        margin-bottom:15px;
+        font-size:30px;
+    }
+
+    .sem-resultados p{
+        font-size:18px;
+    }
+}
+
+/* ========================================================= */
+/* ======================== DESKTOP ======================== */
+/* ========================================================= */
+@media (min-width:1440px){
+
+    /* ======================================== */
+    /* -------- Busca ------------------------- */
+    /* ======================================== */
+    .busca{
+        max-width:1600px;
+        margin:30px auto 20px;
+        padding:40px;
+    }
+
+    .busca h3{
+        margin-bottom:40px;
+        font-size:42px;
+    }
+
+    form{
+        gap:25px;
+    }
+
+    select{
+        height:55px;
+        font-size:18px;
+    }
+
+    .btn-buscar{
+        height:55px;
+        font-size:20px;
+    }
+
+    /* ======================================== */
+    /* -------- Título ------------------------ */
+    /* ======================================== */
+    .titulo{
+        margin:95px 0 40px;
+    }
+
+    .titulo h3{
+        font-size:42px;
+        font-weight:700;
+    }
+
+    /* ======================================== */
+    /* -------- Lista de Imóveis -------------- */
+    /* ======================================== */
+    #lista-imoveis{
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:28px;
+        max-width:1700px;
+        margin:0 auto 60px;
+    }
+
+    .card-imovel{
+        width:100%;
+        max-width:390px;
+        margin:0 auto;
+    }
+
+    .card-imovel img{
+        height:240px;
+    }
+
+    .info-imovel{
+        padding:22px;
+    }
+
+    .info-imovel h3{
+        font-size:24px;
+    }
+
+    .preco{
+        font-size:30px;
+    }
+
+    .btn-detalhes{
+        padding:16px;
+        font-size:18px;
+    }
+
+    .status-card{
+        width:fit-content;
+        min-width:140px;
+        padding:10px 20px;
+    }
+
+    /* ======================================== */
+    /* -------- Paginação --------------------- */
+    /* ======================================== */
+    .pagina{
+        width:52px;
+        height:52px;
+        font-size:18px;
+    }
+
+    /* ======================================== */
+    /* -------- Sem Resultados ---------------- */
+    /* ======================================== */
+    .sem-resultados{
+        grid-column:1 / -1;
+        justify-self:center;
+        width:100%;
+        max-width:600px;
+        margin:60px auto 80px;
+        padding:40px;
+    }
+
+    .sem-resultados h3{
+        font-size:34px;
+    }
+
+    .sem-resultados p{
+        font-size:20px;
+    }
+}
+
+/* ========================================================= */
+/* ================= CARREGAMENTO DA LISTA ================= */
+/* ========================================================= */
+.carregando-imoveis{
+    margin:30px 20px;
+    text-align:center;
+    color:var(--cor-secundaria);
+    font-size:17px;
+}

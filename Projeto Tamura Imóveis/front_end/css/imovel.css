@@ -1,0 +1,567 @@
+/* ========================================================= */
+/* ===================== BOTÃO VOLTAR ====================== */
+/* ========================================================= */
+.voltar-container{
+    padding:15px;
+}
+
+.btn-voltar{
+    display:inline-block;
+    padding:10px 16px;
+    border:3px solid var(--cor-secundaria);
+    border-radius:10px;
+    background:#FFFFFF;
+    color:var(--cor-secundaria);
+    font-weight:bold;
+    transition:.30s;
+}
+
+.btn-voltar:hover{
+    color:var(--cor-destaque);
+}
+
+/* ========================================================= */
+/* ======================== GALERIA ======================== */
+/* ========================================================= */
+.galeria-imovel{
+    padding:18px;
+}
+
+.carrossel{
+    position:relative;
+    width:100%;
+    aspect-ratio:16 / 9;
+}
+
+#img-principal{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+    border-radius:20px;
+    background:#FFFFFF;
+    transition:.30s;
+}
+
+/* ======================================== */
+/* -------- Miniaturas -------------------- */
+/* ======================================== */
+.miniaturas{
+    display:flex;
+    gap:8px;
+    margin-top:10px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+}
+
+.miniatura{
+    width:64px;
+    height:64px;
+    flex-shrink:0;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.30s;
+}
+
+.miniatura.ativa{
+    border:2px solid var(--cor-destaque);
+}
+
+/* ========================================================= */
+/* ===================== NAVEGAÇÃO ========================= */
+/* ========================================================= */
+
+/* ======================================== */
+/* -------- Botões do Carrossel ----------- */
+/* ======================================== */
+.btn-anterior, .btn-proximo{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:50%;
+    background:rgba(78,78,80,.55);
+    color:#FFFFFF;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.30s;
+}
+
+.btn-anterior:hover, .btn-proximo:hover{
+    background:rgba(78,78,80,.75);
+}
+
+.btn-anterior{
+    left:10px;
+}
+
+.btn-proximo{
+    right:10px;
+}
+
+/* ========================================================= */
+/* ====================== INFORMAÇÕES ====================== */
+/* ========================================================= */
+.info-imovel{
+    padding:22px 18px;
+}
+
+.titulo-imovel{
+    margin-bottom:4px;
+    color:var(--cor-primaria);
+    font-size:28px;
+    font-weight:bold;
+}
+
+.codigo-imovel{
+    margin-bottom:8px;
+    color:var(--cor-secundaria);
+    font-size:13px;
+}
+
+.preco-imovel{
+    margin-bottom:14px;
+    color:var(--cor-destaque);
+    font-size:30px;
+    font-weight:bold;
+}
+
+.endereco-imovel{
+    margin-bottom:15px;
+    color:var(--cor-primaria);
+    font-size:16px;
+    font-weight:bold;
+    line-height:1.45;
+}
+
+/* ========================================================= */
+/* ======================== STATUS ========================= */
+/* ========================================================= */
+.status-imovel{
+    display:inline-block;
+    padding:7px 15px;
+    margin-bottom:18px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.status-disponivel{
+    background:var(--status-disponivel-bg);
+    color:var(--status-disponivel);
+}
+
+.status-vendido{
+    background:var(--status-vendido-bg);
+    color:var(--status-vendido);
+}
+
+.status-reservado{
+    background:var(--status-reservado-bg);
+    color:var(--status-reservado);
+}
+
+.status-alugado{
+    background:var(--status-alugado-bg);
+    color:var(--status-alugado);
+}
+
+/* ========================================================= */
+/* ==================== CARACTERÍSTICAS ==================== */
+/* ========================================================= */
+.caracteristicas-imovel{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:0 18px 25px;
+}
+
+.caracteristica{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:42px;
+    padding:10px 15px;
+    border:2px solid var(--cor-terciaria);
+    border-radius:12px;
+    background:var(--cor-fundo);
+    color:var(--cor-primaria);
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ========================================================= */
+/* ======================= DESCRIÇÃO ======================= */
+/* ========================================================= */
+.descricao-imovel{
+    padding:0 18px 70px;
+    color:var(--cor-secundaria);
+    font-size:16px;
+    line-height:1.7;
+}
+
+.descricao-imovel h2{
+    color:var(--cor-primaria);
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.linha-titulo{
+    width:75px;
+    height:4px;
+    margin-bottom:18px;
+    border-radius:999px;
+    background:var(--cor-destaque);
+}
+
+.descricao-imovel p{
+    line-height:1.7;
+}
+
+/* ========================================================= */
+/* ======================== TABLET ========================= */
+/* ========================================================= */
+@media (min-width:768px){
+
+    /* ======================================== */
+    /* -------- Botão Voltar ------------------ */
+    /* ======================================== */
+    .voltar-container{
+        padding:22px 28px;
+    }
+
+    .btn-voltar{
+        padding:14px 22px;
+        font-size:18px;
+    }
+
+    /* ======================================== */
+    /* -------- Galeria ----------------------- */
+    /* ======================================== */
+    .galeria-imovel{
+        padding:0 28px;
+    }
+
+    .carrossel{
+        aspect-ratio:16/9;
+    }
+
+    .miniaturas{
+        gap:12px;
+        margin-top:14px;
+    }
+
+    .miniatura{
+        width:82px;
+        height:82px;
+    }
+
+    .btn-anterior, .btn-proximo{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    /* ======================================== */
+    /* -------- Informações ------------------- */
+    /* ======================================== */
+    .info-imovel{
+        padding:28px;
+    }
+
+    .titulo-imovel{
+        font-size:38px;
+        margin-bottom:6px;
+    }
+
+    .codigo-imovel{
+        font-size:17px;
+        margin-bottom:12px;
+    }
+
+    .status-imovel{
+        font-size:18px;
+        padding:10px 22px;
+        margin-bottom:20px;
+    }
+
+    .preco-imovel{
+        font-size:42px;
+        margin-bottom:20px;
+    }
+
+    .endereco-imovel{
+        font-size:20px;
+        line-height:1.6;
+        margin-bottom:24px;
+    }
+
+    /* ======================================== */
+    /* -------- Características --------------- */
+    /* ======================================== */
+    .caracteristicas-imovel{
+        gap:12px;
+        padding:0 28px 35px;
+    }
+
+    .caracteristica{
+        min-height:50px;
+        padding:12px 18px;
+        font-size:17px;
+    }
+
+    /* ======================================== */
+    /* -------- Descrição --------------------- */
+    /* ======================================== */
+    .descricao-imovel{
+        padding:0 28px 60px;
+    }
+
+    .descricao-imovel h2{
+        font-size:34px;
+        margin-bottom:10px;
+    }
+
+    .linha-titulo{
+        width:90px;
+        height:5px;
+        margin-bottom:22px;
+    }
+
+    .descricao-imovel p{
+        font-size:20px;
+        line-height:1.8;
+    }
+}
+
+/* ========================================================= */
+/* ======================= NOTEBOOK ======================== */
+/* ========================================================= */
+@media (min-width:1024px){
+
+    /* ======================================== */
+    /* -------- Botão Voltar ------------------ */
+    /* ======================================== */
+    .voltar-container{
+        padding:22px 28px;
+    }
+
+    .btn-voltar{
+        padding:14px 22px;
+        font-size:22px;
+    }
+
+    /* ======================================== */
+    /* -------- Containers -------------------- */
+    /* ======================================== */
+    .voltar-container, .galeria-imovel, .conteudo-imovel, .descricao-imovel{
+        max-width:1400px;
+        margin:0 auto;
+    }
+
+    .voltar-container{
+        margin-top:20px;
+        padding:0 30px;
+    }
+
+    .galeria-imovel{
+        padding:18px 30px;
+    }
+
+    /* ======================================== */
+    /* -------- Galeria ----------------------- */
+    /* ======================================== */
+    .carrossel{
+        max-height:500px;
+    }
+
+    .miniaturas{
+        gap:12px;
+        margin-top:14px;
+    }
+
+    .miniatura{
+        width:68px;
+        height:68px;
+    }
+
+    /* ======================================== */
+    /* -------- Conteúdo ---------------------- */
+    /* ======================================== */
+    .conteudo-imovel{
+        padding:8px 30px 0;
+    }
+
+    .info-imovel{
+        padding:0;
+    }
+
+    /* ======================================== */
+    /* -------- Cabeçalho --------------------- */
+    /* ======================================== */
+    .cabecalho-imovel{
+        position:relative;
+        margin-bottom:8px;
+        padding-right:165px;
+    }
+
+    .titulo-imovel{
+        margin:0;
+        font-size:38px;
+    }
+
+    .status-imovel{
+        position:absolute;
+        right:0;
+        top:2px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-width:135px;
+        padding:9px 20px;
+        margin:0;
+        border-radius:999px;
+        font-size:15px;
+    }
+
+    .codigo-imovel{
+        margin-bottom:12px;
+        font-size:18px;
+    }
+
+    .preco-imovel{
+        margin-bottom:15px;
+        font-size:38px;
+    }
+
+    .endereco-imovel{
+        margin-bottom:24px;
+        font-size:20px;
+        white-space:nowrap;
+    }
+
+    /* ======================================== */
+    /* -------- Características --------------- */
+    /* ======================================== */
+    .caracteristicas-imovel{
+        gap:10px;
+        padding:0 0 35px;
+    }
+
+    .caracteristica{
+        min-width:150px;
+        min-height:46px;
+        padding:10px 16px;
+        font-size:15px;
+    }
+
+    /* ======================================== */
+    /* -------- Descrição --------------------- */
+    /* ======================================== */
+    .descricao-imovel{
+        margin:5px auto 60px;
+        padding:0 30px;
+    }
+
+    .descricao-imovel h2{
+        font-size:28px;
+    }
+
+    .linha-titulo{
+        width:72px;
+        margin-bottom:18px;
+    }
+
+    .descricao-imovel p{
+        max-width:900px;
+        font-size:20px;
+        line-height:1.8;
+    }
+}
+
+/* ========================================================= */
+/* ======================== DESKTOP ======================== */
+/* ========================================================= */
+@media (min-width:1440px){
+
+    /* ======================================== */
+    /* -------- Containers -------------------- */
+    /* ======================================== */
+    .voltar-container, .galeria-imovel, .conteudo-imovel, .descricao-imovel{
+        max-width:1600px;
+    }
+
+    /* ======================================== */
+    /* -------- Galeria ----------------------- */
+    /* ======================================== */
+    .carrossel{
+        max-height:580px;
+    }
+
+    .miniaturas{
+        gap:14px;
+    }
+
+    .miniatura{
+        width:76px;
+        height:76px;
+    }
+
+    /* ======================================== */
+    /* -------- Cabeçalho --------------------- */
+    /* ======================================== */
+    .cabecalho-imovel{
+        padding-right:180px;
+    }
+
+    .titulo-imovel{
+        font-size:36px;
+    }
+
+    .status-imovel{
+        min-width:150px;
+        padding:10px 22px;
+        font-size:16px;
+    }
+
+    .codigo-imovel{
+        font-size:15px;
+    }
+
+    .preco-imovel{
+        font-size:38px;
+    }
+
+    .endereco-imovel{
+        font-size:18px;
+    }
+
+    /* ======================================== */
+    /* -------- Características --------------- */
+    /* ======================================== */
+    .caracteristica{
+        min-width:155px;
+        min-height:48px;
+        padding:12px 18px;
+        font-size:15px;
+    }
+
+    /* ======================================== */
+    /* -------- Descrição --------------------- */
+    /* ======================================== */
+    .descricao-imovel h2{
+        font-size:30px;
+    }
+
+    .descricao-imovel p{
+        max-width:980px;
+        font-size:19px;
+        line-height:1.85;
+    }
+}

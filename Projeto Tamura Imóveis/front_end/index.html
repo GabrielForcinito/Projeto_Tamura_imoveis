@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="ti_icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/design.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <!-- SEO básico -->
+    <title>Tamura Imóveis | Compra, Venda e Aluguel em São Paulo</title>
+    <meta
+        name="description"
+        content="Encontre casas, apartamentos, terrenos e imóveis comerciais para comprar ou alugar em São Miguel Paulista e bairros da Zona Leste de São Paulo." />
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Tamura Imóveis" />
+    <meta name="theme-color" content="#143d59" />
+
+    <!-- URL canônica -->
+    <link rel="canonical" href="https://tamuraimoveis.com/" id="canonical-url" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tamura Imóveis" />
+    <meta property="og:title" content="Tamura Imóveis | Compra, Venda e Aluguel em São Paulo" />
+    <meta
+        property="og:description"
+        content="Encontre casas, apartamentos, terrenos e imóveis comerciais para comprar ou alugar em São Miguel Paulista e bairros da Zona Leste de São Paulo." />
+    <meta property="og:url" content="https://tamuraimoveis.com/" />
+    <meta property="og:image" content="https://tamuraimoveis.com/fotos/logo.png" />
+    <meta property="og:image:alt" content="Logotipo da Tamura Imóveis" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tamura Imóveis | Compra, Venda e Aluguel em São Paulo" />
+    <meta
+        name="twitter:description"
+        content="Encontre casas, apartamentos, terrenos e imóveis comerciais para comprar ou alugar em São Miguel Paulista e bairros da Zona Leste de São Paulo." />
+    <meta name="twitter:image" content="https://tamuraimoveis.com/fotos/logo.png" />
+
+    <!-- Dados estruturados -->
+    <script id="schema-imobiliaria" type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "@id": "https://tamuraimoveis.com/#imobiliaria",
+        "name": "Tamura Imóveis",
+        "url": "https://tamuraimoveis.com/",
+        "logo": "https://tamuraimoveis.com/fotos/logo.png",
+        "image": "https://tamuraimoveis.com/fotos/logo.png",
+        "telephone": "+55 11 2956-8113",
+        "email": "tamura.imoveis@hotmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua João H. Pedroso, 10 A",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "areaServed": [
+            "São Miguel Paulista",
+            "Zona Leste de São Paulo"
+        ],
+        "openingHours": "Mo-Fr 08:00-12:00, Mo-Fr 13:30-17:30",
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+    <header> <!-- Topo da página -->
+        <div class="logo">
+            <img src="fotos/logo.png" alt="Logotipo da Tamura Imóveis">
+            <h1>Tamura <br> Imóveis</h1>
+        </div>
+
+        <nav> <!-- Navegação -->
+            <button id="menu-btn"><img src="fotos/menu.png" alt=""></button>
+            <ul class="navegacao">
+                 <li><a href="">Início</a></li>
+                 <li><a href="paginas/comprar.html">Comprar</a></li>
+                 <li><a href="paginas/alugar.html">Alugar</a></li>
+                 <li><a href="paginas/contato.html">Contato</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Encontre o imóvel ideal para você.</h2>
+            <p>Casas, apartamentos e imóveis para compra ou locação com conforto e praticidade.</p>
+        </section>
+
+        <section class="busca">
+            <h3>Encontre seu Imóvel</h3>
+            <form>
+                <div class="tipo-negocio">
+                    <button class="btn-comprar ativo" type="button">Comprar</button>
+                    <button class="btn-alugar" type="button">Alugar</button>
+                </div>
+
+                <div class="campos-busca">
+                    <select id="tipo">
+                        <option value="">Selecione um Tipo</option>
+                        <option>Casa Térrea</option>
+                        <option>Sobrado</option>
+                        <option>Apartamento</option>
+                        <option>Kitnete</option>
+                        <option>Salão Comercial</option>
+                        <option>Galpão</option>
+                    </select>
+
+                    <select id="bairro">
+                        <option value="">Selecione um Bairro</option>
+                        <option>Cidade A.E. Carvalho</option>
+                        <option>Ermelino Matarazzo</option>
+                        <option>Itaquera</option>
+                        <option>Jardim Danfer</option>
+                        <option>Jardim Helena</option>
+                        <option>Jardim Popular</option>
+                        <option>Jardim São Paulo</option>
+                        <option>Parque Boturussu</option>
+                        <option>Penha</option>
+                        <option>Ponte Rasa</option>
+                        <option>São Miguel Paulista</option>
+                        <option>Vila Curuçá</option>
+                        <option>Vila Jacuí</option>
+                        <option>Vila Marieta</option>
+                        <option>Vila Pedroso</option>
+                        <option>Vila Ré</option>
+                        <option>Vila Silvia</option>
+                    </select>
+
+                    <select id="preco">
+                        <option value="">Selecione um Valor</option>
+                        <option value="0-300000">Até R$ 300.000</option>
+                        <option value="300000-600000">R$ 300.000 até R$ 600.000</option>
+                        <option value="600000-1000000">R$ 600.000 até R$ 1.000.000</option>
+                        <option value="1000000-2000000">R$ 1.000.000 até R$ 2.000.000</option>
+                        <option value="acima2000000">Acima de R$ 2.000.000</option>
+                    </select>
+
+                    <button class="btn-buscar" type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="destaques">
+            <h2>Imóveis em Destaque</h2>
+             <div id="lista-destaques"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+
+            <div class="empresa">
+                <h3>Tamura Imóveis</h3>
+                <p>CRECI: 17.952 J</p>
+
+                <div class="desenvolvedor">
+                    <p>Desenvolvido por Gabriel Forcinito</p>
+                    <p>Contato: <a href="mailto:gabrielforcinito06@gmail.com">gabrielforcinito06@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="localizacao">
+                <h4>📍Endereço: </h4>
+                <p>Rua João H. Pedroso, 10 A</p>
+                <p>São Miguel Paulista - São Paulo/SP</p>
+            </div>
+
+            <div class="contatos">
+                <h4>📞Contatos: </h4>
+                <p>Telefone: (11) 2956-8113</p>
+                <p>WhatsApp: (11) 94797-6234</p>
+                <p>E-mail: tamura.imoveis@hotmail.com</p>
+                <a>Site: tamuraimoveis.com</a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2026 Tamura Imóveis</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/api-imoveis.js"></script>
+    <script src="javascript/funcoes.js?v=20260731-2"></script>
+    <script src="javascript/home.js"></script>
+</body>
+</html>

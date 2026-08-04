@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../ti_icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/imovel.css" />
+
+    <!-- SEO básico -->
+    <title>Detalhes do Imóvel | Tamura Imóveis</title>
+    <meta
+        name="description"
+        content="Consulte fotos, preço, localização, características e descrição completa deste imóvel anunciado pela Tamura Imóveis." />
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Tamura Imóveis" />
+    <meta name="theme-color" content="#143d59" />
+
+    <!-- URL canônica -->
+    <link rel="canonical" href="https://tamuraimoveis.com/paginas/imovel.html" id="canonical-url" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tamura Imóveis" />
+    <meta property="og:title" content="Detalhes do Imóvel | Tamura Imóveis" id="meta-og-title" />
+    <meta
+        property="og:description"
+        content="Consulte fotos, preço, localização, características e descrição completa deste imóvel anunciado pela Tamura Imóveis."
+        id="meta-og-description" />
+    <meta property="og:url" content="https://tamuraimoveis.com/paginas/imovel.html" id="meta-og-url" />
+    <meta property="og:image" content="https://tamuraimoveis.com/fotos/logo.png" id="meta-og-image" />
+    <meta property="og:image:alt" content="Logotipo da Tamura Imóveis" id="meta-og-image-alt" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Detalhes do Imóvel | Tamura Imóveis" id="meta-twitter-title" />
+    <meta
+        name="twitter:description"
+        content="Consulte fotos, preço, localização, características e descrição completa deste imóvel anunciado pela Tamura Imóveis."
+        id="meta-twitter-description" />
+    <meta name="twitter:image" content="https://tamuraimoveis.com/fotos/logo.png" id="meta-twitter-image" />
+
+    <!-- Dados estruturados -->
+    <script id="schema-imovel" type="application/ld+json">
+    {}
+    </script>
+</head>
+<body>
+    <header> <!-- Topo da página -->
+        <div class="logo">
+            <img src="../fotos/logo.png" alt="Logotipo da Tamura Imóveis">
+            <h1>Tamura <br> Imóveis</h1>
+        </div>
+
+        <nav> <!-- Navegação -->
+            <button id="menu-btn"><img src="../fotos/menu.png" alt=""></button>
+            <ul class="navegacao">
+                 <li><a href="../index.html">Início</a></li>
+                 <li><a href="../paginas/comprar.html">Comprar</a></li>
+                 <li><a href="../paginas/alugar.html">Alugar</a></li>
+                 <li><a href="../paginas/contato.html">Contato</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+        <div class="voltar-container">
+            <a href="../index.html" class="btn-voltar"> ← Voltar para página anterior </a>
+        </div>
+
+        <section class="galeria-imovel">
+            <div class="carrossel">
+                <button class="btn-anterior">‹</button>
+
+                <img id="img-principal" src="" alt="">
+
+                <button class="btn-proximo">›</button>
+            </div>
+
+            <div class="miniaturas"></div>
+        </section>
+
+        <section class="conteudo-imovel">
+            <section class="info-imovel">
+                <div class="cabecalho-imovel">
+                    <h1 id="titulo-imovel" class="titulo-imovel"></h1>
+                    <p id="status-imovel" class="status-imovel"></p>
+                </div>
+
+                <p id="codigo-imovel" class="codigo-imovel"></p>
+                <p id="preco-imovel" class="preco-imovel"></p>
+                <p id="endereco-imovel" class="endereco-imovel"></p>
+            </section>
+
+            <section class="caracteristicas-imovel">
+                <div class="caracteristica">
+                    <span id="quartos"></span>
+                </div>
+
+                <div class="caracteristica">
+                    <span id="suites"></span>
+                </div>
+
+                <div class="caracteristica">
+                    <span id="banheiros"></span>
+                </div>
+
+                <div class="caracteristica">
+                    <span id="vagas"></span>
+                </div>
+
+                <div class="caracteristica">
+                    <span id="area-terreno"></span>
+                </div>
+
+                <div class="caracteristica">
+                    <span id="area-construida"></span>
+                </div>
+            </section>
+        </section>
+
+        <section class="descricao-imovel">
+            <h2>Descrição</h2>
+            <div class="linha-titulo"></div>
+            <p id="descricao-imovel"></p>
+        </section>
+
+        <section class="contato-imovel">
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+
+            <div class="empresa">
+                <h3>Tamura Imóveis</h3>
+                <p>CRECI: 17.952 J</p>
+
+                <div class="desenvolvedor">
+                    <p>Desenvolvido por Gabriel Forcinito</p>
+                    <p>Contato: <a href="mailto:gabrielforcinito06@gmail.com">gabrielforcinito06@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="localizacao">
+                <h4>📍Endereço: </h4>
+                <p>Rua João H. Pedroso, 10 A</p>
+                <p>São Miguel Paulista - São Paulo/SP</p>
+            </div>
+
+            <div class="contatos">
+                <h4>📞Contatos: </h4>
+                <p>Telefone: (11) 2956-8113</p>
+                <p>WhatsApp: (11) 94797-6234</p>
+                <p>E-mail: tamura.imoveis@hotmail.com</p>
+                <a>Site: tamuraimoveis.com</a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2026 Tamura Imóveis</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/api-imoveis.js"></script>
+    <script src="../javascript/funcoes.js?v=20260731-2"></script>
+    <script src="../javascript/detalhes.js"></script>
+</body>
+</html>

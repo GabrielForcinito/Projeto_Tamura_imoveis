@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="shortcut icon" href="../ti_icon.ico" type="image/x-icon" />
+
+    <!-- SEO básico -->
+    <title>Painel Administrativo | Tamura Imóveis</title>
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+</head>
+<body>
+    <header class="cabecalho-admin">
+        <div class="cabecalho-admin-conteudo">
+            <h1>Tamura Imóveis — Administração</h1>
+
+            <button
+                type="button"
+                id="btn-sair"
+                class="btn-sair"
+            >
+                Sair
+            </button>
+        </div>
+    </header>
+
+    <main class="conteudo-admin">
+        <section class="topo-painel">
+            <div>
+                <h2>Imóveis cadastrados</h2>
+
+                <p>
+                    Gerencie os imóveis exibidos no site.
+                </p>
+            </div>
+
+            <a
+                href="cadastrar-imovel.html"
+                class="btn-cadastrar"
+            >
+                + Cadastrar imóvel
+            </a>
+        </section>
+
+        <section class="tabela-container">
+            <table class="tabela-imoveis">
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Código</th>
+                        <th>Título</th>
+                        <th>Tipo</th>
+                        <th>Finalidade</th>
+                        <th>Preço</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpo-tabela"></tbody>
+            </table>
+
+            <p
+                id="mensagem-painel"
+                class="mensagem-painel"
+            >
+                Carregando imóveis...
+            </p>
+        </section>
+    </main>
+
+    <script src="javascript/autenticacao-admin.js"></script>
+    <script src="javascript/painel.js"></script>
+</body>
+</html>

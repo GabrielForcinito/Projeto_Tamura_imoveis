@@ -1,0 +1,261 @@
+/* ===============================
+   Página de contato
+=============================== */
+.pagina-contato {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* ===============================
+   Apresentação
+=============================== */
+.apresentacao-contato {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.apresentacao-contato h2 {
+    margin-bottom: 20px;
+    color: #143d59;
+    font-size: 2rem;
+}
+
+.apresentacao-contato p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ===============================
+   Lista de contatos
+=============================== */
+.lista-contatos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+/* ===============================
+   Cards de contato
+=============================== */
+.card-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    min-height: 290px;
+    padding: 35px 30px;
+    background-color: #fff;
+    border: 1px solid #d61f26;
+    border-top-width: 4px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card-contato:hover {
+    transform: translateY(-6px);
+    border-color: #b30000;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   Ícones
+=============================== */
+.icone-contato {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+/* ===============================
+   Títulos dos cards
+=============================== */
+.card-contato h3 {
+    margin-bottom: 15px;
+    color: #143d59;
+    font-size: 1.5rem;
+}
+
+/* ===============================
+   Dados de contato
+=============================== */
+.dado-contato {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.email-contato {
+    font-size: 1rem;
+}
+
+/* ===============================
+   Textos de apoio
+=============================== */
+.informacao-contato {
+    max-width: 250px;
+    margin-top: auto;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===============================
+   Atendimento especializado
+=============================== */
+.servicos-contato {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.servicos-contato h3 {
+    margin-bottom: 15px;
+    color: #143d59;
+    font-size: 1.7rem;
+}
+
+.servicos-contato p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===============================
+   Tablet
+=============================== */
+@media (max-width: 991px) {
+    .pagina-contato {
+        padding: 60px 30px;
+    }
+
+    .apresentacao-contato h2 {
+        font-size: 2.3rem;
+    }
+
+    .apresentacao-contato p {
+        font-size: 1.25rem;
+    }
+
+    .lista-contatos {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .card-contato {
+        width: 100%;
+        max-width: 600px;
+        min-height: 340px;
+        padding: 45px;
+    }
+
+    .icone-contato {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card-contato h3 {
+        font-size: 1.8rem;
+    }
+
+    .dado-contato {
+        font-size: 1.3rem;
+    }
+
+    .email-contato {
+        font-size: 1.2rem;
+    }
+
+    .informacao-contato {
+        max-width: 400px;
+        font-size: 1.15rem;
+    }
+
+    .servicos-contato h3 {
+        font-size: 1.9rem;
+    }
+
+    .servicos-contato p {
+        font-size: 1.2rem;
+    }
+}
+
+/* ===============================
+   Celular
+=============================== */
+@media (max-width: 600px) {
+    .pagina-contato {
+        padding: 40px 20px;
+    }
+
+    .apresentacao-contato {
+        margin-bottom: 45px;
+    }
+
+    .apresentacao-contato h2 {
+        font-size: 1.7rem;
+    }
+
+    .apresentacao-contato p {
+        font-size: 1rem;
+    }
+
+    .lista-contatos {
+        gap: 25px;
+    }
+
+    .card-contato {
+        max-width: 100%;
+        min-height: 280px;
+        padding: 30px 20px;
+    }
+
+    .icone-contato {
+        width: 65px;
+        height: 65px;
+    }
+
+    .card-contato h3 {
+        font-size: 1.4rem;
+    }
+
+    .dado-contato {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .email-contato {
+        font-size: 0.95rem;
+    }
+
+    .informacao-contato {
+        max-width: 280px;
+        font-size: 0.95rem;
+    }
+
+    .servicos-contato {
+        margin-top: 50px;
+    }
+
+    .servicos-contato h3 {
+        font-size: 1.5rem;
+    }
+
+    .servicos-contato p {
+        font-size: 1rem;
+    }
+}

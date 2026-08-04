@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="shortcut icon" href="../ti_icon.ico" type="image/x-icon" />
+
+    <!-- SEO básico -->
+    <title>Login administrativo | Tamura Imóveis</title>
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+</head>
+<body class="pagina-login">
+    <main class="conteudo-login">
+        <section class="cartao-login">
+            <header class="cabecalho-login">
+                <h1>Tamura Imóveis</h1>
+
+                <p>
+                    Acesso ao painel administrativo
+                </p>
+            </header>
+
+            <form
+                id="formulario-login"
+                class="formulario-login"
+            >
+                <div class="campo">
+                    <label for="usuario">
+                        Usuário
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        autocomplete="username"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                <label for="senha">
+                    Senha
+                </label>
+
+                <div class="campo-senha">
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="btn-visualizar-senha"
+                        class="btn-visualizar-senha"
+                        aria-label="Mostrar senha"
+                        title="Mostrar senha"
+                    >
+                        <svg
+                            class="icone-olho"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                            ></path>
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="3"
+                            ></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+                <div
+                    id="mensagem-login"
+                    class="mensagem-formulario"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+                <button
+                    type="submit"
+                    id="btn-entrar"
+                    class="btn-salvar btn-entrar"
+                >
+                    Entrar
+                </button>
+            </form>
+
+            <a
+                href="../index.html"
+                class="link-voltar-site"
+            >
+                Voltar para o site
+            </a>
+        </section>
+    </main>
+
+    <script src="javascript/login.js"></script>
+</body>
+</html>
