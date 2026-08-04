@@ -1,61 +1,130 @@
-# 🏠 Tamura Imóveis
+# 🏡 Tamura Imóveis
 
-Sistema web completo desenvolvido para uma imobiliária, com catálogo de imóveis, filtros, paginação, páginas de detalhes e painel administrativo para gerenciamento dos anúncios.
+Sistema web completo desenvolvido para uma imobiliária real, oferecendo
+uma experiência moderna para clientes e um painel administrativo para
+gerenciamento dos imóveis.
 
-## 🌐 Demonstração online
+## 🌐 Demonstração Online
 
 **Site:** https://tamuraimoveis.com
 
-## 🚀 Tecnologias utilizadas
+------------------------------------------------------------------------
 
-- HTML5
-- CSS3
-- JavaScript
-- Node.js
-- Express
-- MySQL
-- Multer
-- Bcrypt
+# 📖 Sobre o Projeto
 
-## ⚙️ Funcionalidades
+O objetivo deste projeto foi desenvolver um sistema imobiliário
+completo, desde a interface do usuário até o painel administrativo,
+permitindo o cadastro, edição, exclusão e consulta de imóveis de forma
+organizada e responsiva.
 
-- Catálogo de imóveis para compra e aluguel
-- Filtros e paginação
-- Página individual de detalhes
-- Layout responsivo
-- Painel administrativo protegido por autenticação
-- Cadastro, edição e exclusão de imóveis
-- Upload múltiplo de imagens
-- Integração com banco de dados MySQL
-- Sitemap, robots.txt e otimizações de SEO
+Além do desenvolvimento da aplicação, o projeto também recebeu
+otimizações de SEO para melhorar sua indexação nos mecanismos de busca.
 
-## 🖼️ Preview
+------------------------------------------------------------------------
 
-Adicione os prints do projeto na pasta `assets/prints` e insira-os nesta seção.
+# 🚀 Tecnologias Utilizadas
 
-## 🔐 Segurança
+-   HTML5
+-   CSS3
+-   JavaScript
+-   Node.js
+-   Express.js
+-   MySQL
+-   Multer
+-   Express Session
 
-O repositório não inclui credenciais, senhas, banco de dados ou arquivos `.env`. Use o arquivo `.env.example` como referência para configurar o ambiente local.
+------------------------------------------------------------------------
 
-## ▶️ Como executar
+# ✨ Principais Funcionalidades
 
-1. Clone o repositório.
-2. Instale as dependências:
+-   Página inicial moderna
+-   Compra e aluguel de imóveis
+-   Busca e filtros
+-   Paginação
+-   Página de detalhes
+-   Galeria de imagens
+-   Painel administrativo
+-   Cadastro, edição e exclusão de imóveis
+-   Upload de múltiplas imagens
+-   Login administrativo
+-   Responsividade
+-   SEO otimizado para Google
 
-```bash
-npm install
+------------------------------------------------------------------------
+
+# 🛠️ Painel Administrativo
+
+O sistema possui uma área administrativa exclusiva para gerenciamento
+dos imóveis, permitindo:
+
+-   Cadastro de novos imóveis
+-   Alteração de informações
+-   Exclusão de imóveis
+-   Gerenciamento de imagens
+-   Organização do catálogo
+
+------------------------------------------------------------------------
+
+# 🔍 SEO
+
+Durante o desenvolvimento foram implementadas melhorias para otimização
+em mecanismos de busca, incluindo:
+
+-   Meta Tags
+-   Sitemap
+-   Robots.txt
+-   URLs amigáveis
+-   Estrutura otimizada para indexação
+
+------------------------------------------------------------------------
+
+# 🖼️ Preview
+
+> Adicione abaixo os prints do projeto.
+
+``` md
+![Home](screenshots/home.png)
+
+![Comprar](screenshots/comprar.png)
+
+![Detalhes](screenshots/detalhes.png)
+
+![Painel](screenshots/admin.png)
+
+![Responsivo](screenshots/responsivo.png)
 ```
 
-3. Copie `.env.example` para `.env` e preencha as variáveis necessárias.
-4. Configure o banco de dados MySQL.
-5. Inicie o servidor:
+------------------------------------------------------------------------
 
-```bash
-npm start
+# 📂 Estrutura do Projeto
+
+``` text
+controllers/
+database/
+front_end/
+middlewares/
+models/
+routes/
+utils/
+server.js
 ```
 
-6. Acesse `http://localhost:3000`.
+------------------------------------------------------------------------
 
-## 👨‍💻 Autor
+# 📚 Aprendizados
 
-Desenvolvido por **Gabriel Forcinito**.
+Este projeto consolidou conhecimentos em desenvolvimento Full Stack,
+integração entre Front-end e Back-end, banco de dados MySQL,
+autenticação, upload de arquivos, deploy em servidor Node.js,
+responsividade e SEO.
+
+------------------------------------------------------------------------
+
+# 👨‍💻 Autor
+
+**Gabriel Forcinito**
+
+Desenvolvedor Full Stack em formação.
+
+-   GitHub: https://github.com/
+-   LinkedIn: https://linkedin.com/
