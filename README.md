@@ -38,15 +38,14 @@ otimizações de SEO para melhorar sua indexação nos mecanismos de busca.
 # ✨ Principais Funcionalidades
 
 -   Página inicial moderna
--   Compra e aluguel de imóveis
 -   Busca e filtros
 -   Paginação
 -   Página de detalhes
 -   Galeria de imagens
 -   Painel administrativo
+-   Login administrativo
 -   Cadastro, edição e exclusão de imóveis
 -   Upload de múltiplas imagens
--   Login administrativo
 -   Responsividade
 -   SEO otimizado para Google
 
