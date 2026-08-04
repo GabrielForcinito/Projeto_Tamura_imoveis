@@ -79,19 +79,7 @@ em mecanismos de busca, incluindo:
 
 # 🖼️ Preview
 
-> Adicione abaixo os prints do projeto.
 
-``` md
-![Home](screenshots/home.png)
-
-![Comprar](screenshots/comprar.png)
-
-![Detalhes](screenshots/detalhes.png)
-
-![Painel](screenshots/admin.png)
-
-![Responsivo](screenshots/responsivo.png)
-```
 
 ------------------------------------------------------------------------
 
@@ -124,6 +112,3 @@ responsividade e SEO.
 **Gabriel Forcinito**
 
 Desenvolvedor Full Stack em formação.
-
--   GitHub: https://github.com/
--   LinkedIn: https://linkedin.com/
